@@ -12,7 +12,7 @@ public class Problems {
      * @throws java.lang.IllegalAccessException
      */
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {      
-        int[] allProblems = {1000};
+        int[] allProblems = {10};
             for (int i : allProblems)
                 try {
                     ((Problem) Class.forName("EulerProblems.Problem"+ i).newInstance()).execute();
